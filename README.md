@@ -1,45 +1,59 @@
 # 📚 PerpusBot ITERA
 
-PerpusBot ITERA adalah chatbot informasi perpustakaan berbasis Machine Learning ringan yang dirancang untuk mahasiswa dan staf ITERA. Chatbot ini memberikan jawaban cepat terkait lokasi, jam operasional, peminjaman, koleksi buku, dan layanan perpustakaan.
+PerpusBot ITERA adalah chatbot informasi perpustakaan berbasis *Machine Learning ringan* yang dikembangkan untuk membantu mahasiswa dan sivitas akademika ITERA memperoleh informasi perpustakaan secara cepat, akurat, dan mudah diakses.  
+Chatbot ini menggunakan pendekatan *Information Retrieval* dengan **TF-IDF** dan **Cosine Similarity** untuk mencocokkan pertanyaan pengguna dengan basis pengetahuan yang tersedia.
+
+🔗 **Demo Aplikasi:**  
+https://perpusbotitera.streamlit.app/
 
 ---
 
-## 🔹 Fitur Utama
-- Menjawab pertanyaan terkait **informasi perpustakaan ITERA**.
-- Memberikan informasi **koleksi buku dan ketersediaannya**.
-- Menyediakan jawaban **FAQ** dan layanan TA.
-- Mudah diakses melalui **Streamlit**.
+## 🎯 Tujuan Pengembangan
+
+- Menyediakan layanan informasi perpustakaan ITERA secara otomatis
+- Mengurangi beban pertanyaan berulang kepada pustakawan
+- Mengimplementasikan konsep *Machine Learning* sederhana dalam konteks nyata
+- Menerapkan alur dasar **MLOps** (data → model → deployment)
 
 ---
 
-## 🔹 Data
-PerpusBot menggunakan dataset dummy akademik sebagai baseline:
-1. **Knowledge Base Chatbot**
-   - Kolom: `intent`, `question_keywords`, `answer`
-   - Contoh pertanyaan: lokasi perpustakaan, jam operasional, cara meminjam, dsb.
+## ✨ Fitur Utama
 
-2. **Koleksi Buku**
-   - Kolom: `book_id`, `judul`, `kategori`, `tahun_terbit`, `stok`
-   - Informasi koleksi buku yang bisa dicek melalui OPAC.
-
-3. **Statistik Perpustakaan**
-   - Kolom: `koleksi`, `kunjungan_harian`, `pembaca_aktif`, `jumlah_exemplar`, `tahun_data`
-   - Ringkasan statistik perpustakaan.
-
----
-
-## 🔹 Teknologi
-- **Python** (3.10+)
-- **Streamlit** untuk antarmuka online
-- **scikit-learn** (TF-IDF + cosine similarity)
-- **pandas** untuk pengolahan data
-- **re** untuk normalisasi teks
-- **MLflow** (opsional) untuk tracking eksperimen
+- 💬 Chatbot interaktif berbasis teks
+- 🧠 Pencocokan pertanyaan menggunakan TF-IDF & cosine similarity
+- 📖 Informasi lengkap perpustakaan ITERA:
+  - Lokasi dan jam operasional
+  - Peminjaman dan pengembalian buku
+  - Perpanjangan dan denda keterlambatan
+  - Layanan Tugas Akhir (TA)
+  - Tata tertib dan aturan ruang baca
+- 📂 Basis pengetahuan berbentuk dataset CSV (mudah dikembangkan)
+- 🛡️ Fallback response jika pertanyaan tidak ditemukan
+- 🌐 Akses online melalui Streamlit Community Cloud
 
 ---
 
-## Kelompok 9 MLOps RA
-- Asa Do'a Uyi 122450005
-- Renisha Putri Giani 122450079
-- Mirzan Yusuf Rabbani 122450118
-- Nasywa Nur Afifah 122450125
+## 🛠️ Teknologi yang Digunakan
+
+- **Python 3.10+**
+- **Streamlit** – antarmuka web
+- **scikit-learn** – TF-IDF & cosine similarity
+- **pandas** – pengolahan dataset
+- **re (regex)** – normalisasi teks
+- **MLflow** *(opsional)* – tracking eksperimen
+
+---
+
+## ⚙️ Cara Kerja Sistem
+
+1. Pengguna memasukkan pertanyaan melalui antarmuka Streamlit
+2. Teks pertanyaan dinormalisasi (lowercase, pembersihan karakter)
+3. Pertanyaan diubah menjadi vektor TF-IDF
+4. Sistem menghitung kemiripan dengan dataset CSV
+5. Jawaban dengan skor kemiripan tertinggi ditampilkan
+6. Jika skor rendah, sistem memberikan jawaban alternatif
+
+---
+
+## 📂 Struktur Proyek
+
