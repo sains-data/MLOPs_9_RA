@@ -56,4 +56,39 @@ https://perpusbotitera.streamlit.app/
 ---
 
 ## 📂 Struktur Proyek
+perpusbot/
+│
+├── app.py # Antarmuka Streamlit
+├── chatbot.py # Logika chatbot & ML
+├── dataset_chatbot_itera.csv # Basis pengetahuan
+├── requirements.txt # Dependensi
+└── README.md # Dokumentasi
+
+---
+
+
+---
+
+## 👥 Kelompok 9 — MLOps RA
+
+| No | Nama | NIM |
+|----|------|-----|
+| 1 | Asa Do'a Uyi | 122450005 |
+| 2 | Renisha Putri Giani | 122450079 |
+| 3 | Mirzan Yusuf Rabbani | 122450118 |
+| 4 | Nasywa Nur Afifah | 122450125 |
+
+---
+
+## 🚀 Pengembangan Lanjutan
+
+- Integrasi MLflow secara penuh
+- Penambahan threshold confidence
+- Ekspansi dataset berbasis log pertanyaan pengguna
+- Dukungan multi-bahasa
+- Integrasi dengan E-Library ITERA
+
+---
+
+📌 *PerpusBot ITERA dikembangkan sebagai bagian dari tugas Mata Kuliah MLOps.*
 
