@@ -37,3 +37,9 @@ PerpusBot menggunakan dataset dummy akademik sebagai baseline:
 - **MLflow** (opsional) untuk tracking eksperimen
 
 ---
+
+## Kelompok 9 MLOps
+- Asa Do'a Uyi 122450005
+- Renisha Putri Giani 122450079
+- Mirzan Yusuf Rabbani 122450118
+- Nasywa Nur Afifah 122450125
