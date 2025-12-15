@@ -38,7 +38,7 @@ PerpusBot menggunakan dataset dummy akademik sebagai baseline:
 
 ---
 
-## Kelompok 9 MLOps
+## Kelompok 9 MLOps RA
 - Asa Do'a Uyi 122450005
 - Renisha Putri Giani 122450079
 - Mirzan Yusuf Rabbani 122450118
