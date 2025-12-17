@@ -73,18 +73,6 @@ https://perpusbotitera.streamlit.app/
 
 ---
 
-## 📂 Struktur Proyek
-perpusbot/
-│
-├── app.py                     # Antarmuka aplikasi (Streamlit)
-├── chatbot.py                 # Logika chatbot & proses Machine Learning
-├── dataset_chatbot_itera.csv  # Dataset CSV (intent, keyword, jawaban)
-├── requirements.txt           # Daftar dependensi Python
-└── README.md                  # Dokumentasi proyek
-
-
----
-
 ## 👥 Kelompok 9 — MLOps RA
 
 | No | Nama | NIM |
