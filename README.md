@@ -40,7 +40,25 @@ https://perpusbotitera.streamlit.app/
 - **scikit-learn** – TF-IDF & cosine similarity
 - **pandas** – pengolahan dataset
 - **re (regex)** – normalisasi teks
-- **MLflow** *(opsional)* – tracking eksperimen
+- **MLflow** – tracking eksperimen
+
+---
+
+## 🧠 Machine Learning Canvas
+
+| Elemen ML Canvas | Deskripsi |
+|-----------------|-----------|
+| **Background** | Pengguna perpustakaan ITERA sering mengalami kesulitan mendapatkan informasi dasar seperti jam operasional, layanan, dan aturan peminjaman, terutama bagi mahasiswa baru dan pengunjung jarak jauh. |
+| **Problem** | Informasi perpustakaan masih sering ditanyakan berulang secara manual dan tidak selalu mudah diakses kapan saja. |
+| **Objective** | Membangun chatbot berbasis web yang mampu menjawab pertanyaan umum perpustakaan secara cepat, relevan, dan konsisten. |
+| **Value Proposition** | Menyediakan akses informasi perpustakaan 24/7, mudah digunakan, dan mengurangi beban pertanyaan rutin ke petugas. |
+| **Data** | Dataset berupa file CSV yang berisi kumpulan pertanyaan, intent, dan jawaban seputar layanan perpustakaan ITERA. |
+| **Feature Engineering** | Teks pertanyaan diubah menjadi representasi numerik menggunakan TF-IDF untuk menangkap kata-kata penting dalam pertanyaan. |
+| **Modeling** | Menggunakan TF-IDF Vectorizer dan Cosine Similarity untuk mencocokkan pertanyaan pengguna dengan pertanyaan pada dataset. |
+| **Evaluation** | Evaluasi dilakukan secara manual berdasarkan relevansi jawaban terhadap maksud pertanyaan pengguna. |
+| **Inference** | Inference dilakukan secara online melalui aplikasi Streamlit, di mana sistem langsung memberikan jawaban saat pengguna mengajukan pertanyaan. |
+| **Deployment** | Aplikasi dideploy sebagai web app menggunakan Streamlit Cloud sehingga dapat diakses secara publik. |
+| **Monitoring & Improvement** | Performa sistem ditingkatkan dengan menambah dan memperbarui dataset CSV berdasarkan pertanyaan yang belum terjawab. |
 
 ---
 
@@ -58,11 +76,11 @@ https://perpusbotitera.streamlit.app/
 ## 📂 Struktur Proyek
 perpusbot/
 │
-├── app.py # Antarmuka Streamlit
-├── chatbot.py # Logika chatbot & ML
-├── dataset_chatbot_itera.csv # Basis pengetahuan
-├── requirements.txt # Dependensi
-└── README.md # Dokumentasi
+├── app.py                     # Antarmuka aplikasi (Streamlit)
+├── chatbot.py                 # Logika chatbot & proses Machine Learning
+├── dataset_chatbot_itera.csv  # Dataset CSV (intent, keyword, jawaban)
+├── requirements.txt           # Daftar dependensi Python
+└── README.md                  # Dokumentasi proyek
 
 ---
 
