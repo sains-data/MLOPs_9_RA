@@ -82,8 +82,6 @@ perpusbot/
 ├── requirements.txt           # Daftar dependensi Python
 └── README.md                  # Dokumentasi proyek
 
----
-
 
 ---
 
@@ -95,16 +93,6 @@ perpusbot/
 | 2 | Renisha Putri Giani | 122450079 |
 | 3 | Mirzan Yusuf Rabbani | 122450118 |
 | 4 | Nasywa Nur Afifah | 122450125 |
-
----
-
-## 🚀 Pengembangan Lanjutan
-
-- Integrasi MLflow secara penuh
-- Penambahan threshold confidence
-- Ekspansi dataset berbasis log pertanyaan pengguna
-- Dukungan multi-bahasa
-- Integrasi dengan E-Library ITERA
 
 ---
 
