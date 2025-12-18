@@ -3,7 +3,7 @@
 PerpusBot ITERA adalah chatbot informasi perpustakaan berbasis *Machine Learning ringan* yang dikembangkan untuk membantu mahasiswa dan sivitas akademika ITERA memperoleh informasi perpustakaan secara cepat, akurat, dan mudah diakses.  
 Chatbot ini menggunakan pendekatan *Information Retrieval* dengan **TF-IDF** dan **Cosine Similarity** untuk mencocokkan pertanyaan pengguna dengan basis pengetahuan yang tersedia.
 
-🔗 **Demo Aplikasi:**  
+🔗 **Aplikasi:**  
 https://perpusbotitera.streamlit.app/
 
 ---
