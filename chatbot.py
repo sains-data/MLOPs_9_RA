@@ -36,7 +36,7 @@ def get_answer(user_input):
     sim = cosine_similarity(user_vec, X)
     idx = sim.argmax()
 
-    # Threshold lebih fleksibel untuk pertanyaan anak
+    # Threshold lebih fleksibel
     if sim[0][idx] < 0.15:
         return "Coba tanya dengan kata lain, saya bisa jawab pertanyaan tentang perpustakaan."
 
@@ -44,7 +44,7 @@ def get_answer(user_input):
 
 # ---------------- TEST ----------------
 if __name__ == "__main__":
-    print("Chatbot Perpustakaan ITERA (HIKDS)")
+    print("Chatbot Perpustakaan ITERA")
     print("Ketik 'keluar' untuk berhenti.\n")
     while True:
         user_input = input("Anda: ")
@@ -53,3 +53,4 @@ if __name__ == "__main__":
             break
         answer = get_answer(user_input)
         print("Chatbot:", answer)
+
